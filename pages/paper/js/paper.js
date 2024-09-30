@@ -7,8 +7,8 @@ tiltElements.forEach((element) => {
     const x = e.clientX - left
     const y = e.clientY - top
 
-    const xMove = ((x / offsetWidth) * 2 - 1) * 10 // 10 - максимальное значение наклона по оси X
-    const yMove = ((y / offsetHeight) * 2 - 1) * -10 // -10 - максимальное значение наклона по оси Y
+    const xMove = ((x / offsetWidth) * 2 - 1) * 10
+    const yMove = ((y / offsetHeight) * 2 - 1) * -10
 
     element.style.transform = `perspective(500px) rotateY(${xMove}deg) rotateX(${yMove}deg)`
   })
